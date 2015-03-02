@@ -11,18 +11,21 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/num1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/num2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/num3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
