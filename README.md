@@ -1,4 +1,3 @@
-# assignment-two
 Your Second Assignment
 ==========
 
