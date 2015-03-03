@@ -11,25 +11,32 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/edit_text_one"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
+            android:hint="Number 1"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/edit_text_two"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
+            android:hint="Number 2"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/edit_text_three"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:hint="Number 3"
             android:layout_weight="1" />
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/text_one"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#a4c639"
