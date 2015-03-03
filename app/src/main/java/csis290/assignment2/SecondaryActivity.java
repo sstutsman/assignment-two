@@ -1,9 +1,12 @@
 package csis290.assignment2;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class SecondaryActivity extends ActionBarActivity {
@@ -12,6 +15,16 @@ public class SecondaryActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondary);
+        TextView TV_displaySum = (TextView) findViewById(R.id.sumTotal);
+
+        Bundle extras = getIntent().getExtras();
+
+        Integer tv_sum = extras.getInt("sumvalue");
+
+
+        TV_displaySum.setText(String.valueOf(tv_sum));
+
+
     }
 
 
