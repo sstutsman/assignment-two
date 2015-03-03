@@ -15,24 +15,31 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Enter num1"
+            android:numeric="decimal"/>
 
         <EditText
             android:id="@+id/num2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Enter num2"
+            android:numeric="decimal"/>
 
         <EditText
             android:id="@+id/num3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Enter num3"
+            android:numeric="decimal"/>
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/findSum"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#a4c639"

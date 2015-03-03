@@ -13,9 +13,11 @@
         android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/sumOfNumbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="44sp"
-        android:gravity="center" />
+        android:gravity="center"
+        android:background="#a4c639"/>
 
 </LinearLayout>
