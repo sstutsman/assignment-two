@@ -34,9 +34,9 @@ public class MainActivity extends Activity {
                 Toast.makeText(MainActivity.this, "Finding the sum.", Toast.LENGTH_LONG).show();
 
                 Intent intent = new Intent(MainActivity.this, SecondaryActivity.class);
-                intent.putExtra("num1", Integer.parseInt(num1.getText().toString()));
-                intent.putExtra("num2", Integer.parseInt(num1.getText().toString()));
-                intent.putExtra("num3", Integer.parseInt(num1.getText().toString()));
+                intent.putExtra("num1", num1.getText().toString());
+                intent.putExtra("num2", num2.getText().toString());
+                intent.putExtra("num3", num3.getText().toString());
                 startActivity(intent);
 
             }

@@ -1,5 +1,6 @@
 package csis290.assignment2;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,25 +8,24 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 
-public class SecondaryActivity extends ActionBarActivity {
+public class SecondaryActivity extends Activity {
 
     TextView sumOfNumbers;
-    int num1 = getIntent().getIntExtra("num1",0);
-    int num2 = getIntent().getIntExtra("num2",0);
-    int num3 = getIntent().getIntExtra("num3",0);
-
 
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondary);
+        int num1 = Integer.parseInt(getIntent().getStringExtra("num1"));
+        int num2 = Integer.parseInt(getIntent().getStringExtra("num2"));
+        int num3 = Integer.parseInt(getIntent().getStringExtra("num3"));
 
         int sum = num1 + num2 + num3;
-        String sumStr = new String(Integer.toString(sum));
+        String strSum = Integer.toString(sum);
 
         sumOfNumbers = (TextView) findViewById(R.id.sumOfNumbers);
-        sumOfNumbers.setText(sumStr);
+        sumOfNumbers.setText(strSum);
     }
 
 
