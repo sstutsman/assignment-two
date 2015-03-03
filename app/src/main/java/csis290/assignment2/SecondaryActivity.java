@@ -4,14 +4,26 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class SecondaryActivity extends ActionBarActivity {
+
+    TextView Answer;
+    String total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondary);
+
+        Answer = (TextView) findViewById(R.id.TextViewanswer);
+
+        total = String.valueOf(Math.round((getIntent().getDoubleExtra("num1", 0) +
+                getIntent().getDoubleExtra("num2", 0) + getIntent().getDoubleExtra("num3", 0))
+                * 100) / 100.0);
+
+        Answer.setText(total);
     }
 
 
