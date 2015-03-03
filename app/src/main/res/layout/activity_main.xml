@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="18dp"
+    android:paddingTop="185dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -36,13 +37,14 @@
             android:hint="numbers!"
             android:numeric="decimal"/>
 
-    </LinearLayout>
+        </LinearLayout>
 
     <TextView
         android:id="@+id/findSum"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#a4c639"
+        android:textColor="#FFFFFF"
         android:gravity="center"
         android:text="Find that sum!"
         android:textSize="24sp" />
