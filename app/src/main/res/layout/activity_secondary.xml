@@ -10,12 +10,24 @@
         android:gravity="center"
         android:text="The sum is ..."
         android:layout_marginBottom="@dimen/activity_horizontal_margin"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="44sp"
-        android:gravity="center" />
+        android:gravity="center"
+        android:id="@+id/answerTextView"/>
+
+    <Button
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:text="Try Again"
+        android:id="@+id/buttonTryAgain"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:enabled="true"
+        android:clickable="false" />
 
 </LinearLayout>

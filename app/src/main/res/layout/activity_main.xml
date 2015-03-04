@@ -14,18 +14,22 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:id="@+id/editTextFirst"/>
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:id="@+id/editTextSecond"/>
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:id="@+id/editTextThird"
+            />
 
     </LinearLayout>
 
@@ -35,5 +39,7 @@
         android:background="#a4c639"
         android:gravity="center"
         android:text="Find that sum!"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:id="@+id/textViewButton"
+        />
 </LinearLayout>
