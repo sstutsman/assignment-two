@@ -1,10 +1,8 @@
 package csis290.assignment2;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -36,16 +34,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 try {
-                    int num1 = new Integer(etNum1.getText().toString());
-                    int num2 = new Integer(etNum2.getText().toString());
-                    int num3 = new Integer(etNum3.getText().toString());
+                    int num1 = Integer.parseInt(etNum1.getText().toString());
+                    int num2 = Integer.parseInt(etNum2.getText().toString());
+                    int num3 = Integer.parseInt(etNum3.getText().toString());
 
                     int sum = num1 + num2 + num3;
 
-                    String sumText = sum + "";
-
                     Intent intent = new Intent(MainActivity.this, SecondaryActivity.class);
-                    intent.putExtra("sum", sumText);
+                    intent.putExtra("sum", Integer.toString(sum));
 
                     startActivity(intent);
                 } catch (NumberFormatException e) {
