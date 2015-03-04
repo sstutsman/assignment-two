@@ -39,13 +39,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 numberOne = Integer.parseInt(num1.getText().toString());
-                numberTwo = Integer.parseInt(num1.getText().toString());
-                numberThree = Integer.parseInt(num1.getText().toString());
+                numberTwo = Integer.parseInt(num2.getText().toString());
+                numberThree = Integer.parseInt(num3.getText().toString());
 
                 finalNumber = numberOne + numberTwo + numberThree;
 
                 Intent intent = new Intent(MainActivity.this, SecondaryActivity.class);
-                intent.putExtra("key", finalNumber);
+                intent.putExtra("key", Integer.toString(finalNumber));
                 startActivity(intent);
             }
         });
