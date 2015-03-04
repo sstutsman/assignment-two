@@ -11,25 +11,32 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/et_int1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Number 1" />
 
         <EditText
+            android:id="@+id/et_int2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Number 2" />
 
         <EditText
+            android:id="@+id/et_int3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Number 3" />
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tv_input"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#a4c639"
