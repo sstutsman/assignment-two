@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
                 int sum = firstInt + secondInt + thirdInt;
 
                 Intent intent = new Intent(MainActivity.this, SecondaryActivity.class);
-                intent.putExtra("key", sum);
+                intent.putExtra("key", Integer.toString(sum));
                 startActivity(intent);
             }
         });
