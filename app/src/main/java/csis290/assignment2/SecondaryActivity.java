@@ -4,14 +4,20 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class SecondaryActivity extends ActionBarActivity {
 
+    TextView tvSumIs;
+    TextView tvDisplaySum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondary);
+        tvSumIs = (TextView) findViewById(R.id.TextViewSumIs);
+        tvDisplaySum = (TextView) findViewById(R.id.DisplaySum);
+        tvDisplaySum.setText(getIntent().getStringExtra("key"));
     }
 
 
