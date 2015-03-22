@@ -1,6 +1,8 @@
 Your Second Assignment
 ==========
 
+NO LONGER ACCEPTING PULL REQUESTS
+
 Deadline: Monday, March 9th, 4:30pm
 
 Do you remember the essay question on the exam about the adding the three integers? This is it! Well, it will be anyway, when you're done with it.
