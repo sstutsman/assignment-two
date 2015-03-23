@@ -11,25 +11,32 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/et_firstInt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
+            android:hint="Input first int"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/et_secondInt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
+            android:hint="Input second int"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/et_thirdInt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:hint="Input third int"
             android:layout_weight="1" />
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tv_findSum"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#a4c639"
