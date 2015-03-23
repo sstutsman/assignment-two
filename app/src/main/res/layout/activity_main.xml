@@ -1,39 +1,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="18dp"
-    android:orientation="vertical">
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:weightSum="1"
+    android:background="@color/dkGrey">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="18dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1.00">
 
         <EditText
-            android:layout_width="0dp"
+            android:id="@+id/num1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Number 1"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
 
         <EditText
-            android:layout_width="0dp"
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Number 2"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
 
         <EditText
-            android:layout_width="0dp"
+            android:id="@+id/num3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="Number 3"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/calculate_button"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="#a4c639"
+        android:background="@color/orange"
         android:gravity="center"
-        android:text="Find that sum!"
-        android:textSize="24sp" />
+        android:text="@string/calc_btn"
+        android:textSize="30sp"
+        android:textColor="@color/white" />
+
 </LinearLayout>
