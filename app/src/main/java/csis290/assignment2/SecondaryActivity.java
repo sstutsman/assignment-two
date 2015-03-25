@@ -4,14 +4,20 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class SecondaryActivity extends ActionBarActivity {
+
+    TextView endText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondary);
+
+        endText = (TextView) findViewById(R.id.end_text);
+        endText.setText(getIntent().getStringExtra("key"));
     }
 
 
