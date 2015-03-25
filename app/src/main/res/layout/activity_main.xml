@@ -11,25 +11,35 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/first"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
+            android:hint="1"
+            android:paddingLeft="45dp"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/second"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
+            android:hint="2"
+            android:paddingLeft="45dp"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/third"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:hint="3"
+            android:paddingLeft="45dp"
             android:layout_weight="1" />
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/find"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#a4c639"
