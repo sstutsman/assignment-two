@@ -13,6 +13,7 @@
         android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/sumArea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="44sp"
