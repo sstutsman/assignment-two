@@ -11,25 +11,35 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/ET_first"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"/>
 
         <EditText
+            android:id="@+id/ET_second"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"/>
 
         <EditText
+            android:id="@+id/ET_third"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"/>
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/TV_theSum"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#a4c639"

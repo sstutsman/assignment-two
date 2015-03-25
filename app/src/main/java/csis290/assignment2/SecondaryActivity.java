@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class SecondaryActivity extends ActionBarActivity {
@@ -12,6 +13,12 @@ public class SecondaryActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondary);
+        TextView TV_showSum = (TextView) findViewById(R.id.sum);
+
+        Bundle extra = getIntent().getExtras();
+        Integer tv_theSum = (Integer) extra.get("theSum");
+        TV_showSum.setText(String.valueOf(tv_theSum));
+
     }
 
 
