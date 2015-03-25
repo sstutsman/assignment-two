@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Assignment 2</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="input">Please enter 3 integers</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_secondary">SecondaryActivity</string>
 </resources>
