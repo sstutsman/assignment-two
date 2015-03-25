@@ -11,18 +11,24 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/Text1"
+            android:hint="First Number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/Text2"
+            android:hint="Second Number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="18dp"
             android:layout_weight="1" />
 
         <EditText
+            android:id="@+id/Text3"
+            android:hint="Third Number"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -30,6 +36,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/findSum"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#a4c639"
